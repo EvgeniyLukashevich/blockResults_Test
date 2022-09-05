@@ -1,5 +1,4 @@
-﻿
-string[] CreateUserArray(int size)
+﻿string[] CreateUserArray(int size)
 {
     string[] array = new string[size];
 
@@ -12,7 +11,6 @@ string[] CreateUserArray(int size)
     Console.WriteLine();
     return array;
 }
-
 
 string[] ThreeCharStringArray(string[] array)
 {
@@ -39,4 +37,12 @@ void ShowArray(string[] array)
     Console.WriteLine();
 }
 
+int size = 5;
+string[] array = CreateUserArray(size);
 
+Console.WriteLine("Array elements will be separated from each other by the symbol \"|\" ");
+Console.WriteLine();
+Console.WriteLine("Catch your original string array: ");
+ShowArray(array);
+Console.WriteLine("Catch your result string array: ");
+ShowArray(ThreeCharStringArray(array));
