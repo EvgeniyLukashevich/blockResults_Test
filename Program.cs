@@ -28,3 +28,15 @@ string[] ThreeCharStringArray(string[] array)
 
     return newArray;
 }
+
+void ShowArray(string[] array)
+{
+    Console.Write("| ");
+    for (int index = 0; index < array.Length; index++)
+        Console.Write($"{array[index]} | ");
+
+    Console.WriteLine();
+    Console.WriteLine();
+}
+
+
